@@ -1,0 +1,16 @@
+name = "testFunction"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "testFunction_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "testFunction.wasm"
+command = "npm run build:release"
